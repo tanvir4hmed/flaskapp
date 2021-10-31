@@ -1,0 +1,43 @@
+ubuntu@ip-172-31-0-94:~$ cat result.txt | grep '172.17.0'
+15:41:36.467931 IP ip-172-17-0-1.ap-south-1.compute.internal.56518 > 02dede94c403.80: Flags [S], seq 1957115565, win 64240, options [mss 1460,sackOK,TS val 3225768646 ecr 0,nop,wscale 7], length 0
+15:41:36.467954 IP 02dede94c403.80 > ip-172-17-0-1.ap-south-1.compute.internal.56518: Flags [S.], seq 2372869785, ack 1957115566, win 65160, options [mss 1460,sackOK,TS val 49795999 ecr 3225768646,nop,wscale 7], length 0
+15:41:36.467985 IP ip-172-17-0-1.ap-south-1.compute.internal.56518 > 02dede94c403.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3225768646 ecr 49795999], length 0
+15:41:36.468567 IP ip-172-17-0-1.ap-south-1.compute.internal.56518 > 02dede94c403.80: Flags [P.], seq 1:75, ack 1, win 502, options [nop,nop,TS val 3225768646 ecr 49795999], length 74: HTTP: GET / HTTP/1.1
+15:41:36.468575 IP 02dede94c403.80 > ip-172-17-0-1.ap-south-1.compute.internal.56518: Flags [.], ack 75, win 509, options [nop,nop,TS val 49795999 ecr 3225768646], length 0
+15:41:36.468658 IP 02dede94c403.45268 > ip-172-17-0-3.ap-south-1.compute.internal.8001: Flags [S], seq 3555781608, win 64240, options [mss 1460,sackOK,TS val 217596609 ecr 0,nop,wscale 7], length 0
+15:41:36.469614 IP ip-172-17-0-1.ap-south-1.compute.internal.56518 > 02dede94c403.80: Flags [.], ack 315, win 500, options [nop,nop,TS val 3225768647 ecr 49796000], length 0
+15:41:36.470244 IP ip-172-31-0-2.ap-south-1.compute.internal.53 > 02dede94c403.39424: 41329 1/0/0 PTR ip-172-17-0-3.ap-south-1.compute.internal. (96)
+15:41:36.470946 IP ip-172-17-0-1.ap-south-1.compute.internal.56518 > 02dede94c403.80: Flags [F.], seq 75, ack 315, win 501, options [nop,nop,TS val 3225768649 ecr 49796000], length 0
+15:41:36.470971 IP 02dede94c403.80 > ip-172-17-0-1.ap-south-1.compute.internal.56518: Flags [F.], seq 315, ack 76, win 509, options [nop,nop,TS val 49796002 ecr 3225768649], length 0
+15:41:36.470982 IP ip-172-17-0-1.ap-south-1.compute.internal.56518 > 02dede94c403.80: Flags [.], ack 316, win 501, options [nop,nop,TS val 3225768649 ecr 49796002], length 0
+15:41:41.659808 ARP, Request who-has ip-172-17-0-2.ap-south-1.compute.internal tell 02dede94c403, length 28
+15:41:41.659824 ARP, Request who-has ip-172-17-0-3.ap-south-1.compute.internal tell 02dede94c403, length 28
+15:41:41.659848 ARP, Request who-has ip-172-17-0-1.ap-south-1.compute.internal tell 02dede94c403, length 28
+15:41:41.659862 ARP, Request who-has 02dede94c403 tell ip-172-17-0-1.ap-south-1.compute.internal, length 28
+15:41:41.659892 ARP, Request who-has 02dede94c403 tell ip-172-17-0-2.ap-south-1.compute.internal, length 28
+15:41:48.714999 IP ip-172-17-0-1.ap-south-1.compute.internal.56524 > 02dede94c403.80: Flags [S], seq 2768771614, win 64240, options [mss 1460,sackOK,TS val 3225780893 ecr 0,nop,wscale 7], length 0
+15:41:48.715019 IP 02dede94c403.80 > ip-172-17-0-1.ap-south-1.compute.internal.56524: Flags [S.], seq 206052084, ack 2768771615, win 65160, options [mss 1460,sackOK,TS val 49808246 ecr 3225780893,nop,wscale 7], length 0
+15:41:48.715038 IP ip-172-17-0-1.ap-south-1.compute.internal.56524 > 02dede94c403.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3225780893 ecr 49808246], length 0
+15:41:48.715564 IP ip-172-17-0-1.ap-south-1.compute.internal.56524 > 02dede94c403.80: Flags [P.], seq 1:75, ack 1, win 502, options [nop,nop,TS val 3225780893 ecr 49808246], length 74: HTTP: GET / HTTP/1.1
+15:41:48.715573 IP 02dede94c403.80 > ip-172-17-0-1.ap-south-1.compute.internal.56524: Flags [.], ack 75, win 509, options [nop,nop,TS val 49808246 ecr 3225780893], length 0
+15:41:48.715633 IP 02dede94c403.45274 > ip-172-17-0-3.ap-south-1.compute.internal.8001: Flags [S], seq 802058567, win 64240, options [mss 1460,sackOK,TS val 217608856 ecr 0,nop,wscale 7], length 0
+15:41:48.715659 IP ip-172-17-0-3.ap-south-1.compute.internal.8001 > 02dede94c403.45274: Flags [R.], seq 0, ack 802058568, win 0, length 0
+15:41:48.715704 IP 02dede94c403.47666 > ip-172-17-0-2.ap-south-1.compute.internal.8000: Flags [S], seq 4164453549, win 64240, options [mss 1460,sackOK,TS val 1141177490 ecr 0,nop,wscale 7], length 0
+15:41:48.715721 IP ip-172-17-0-2.ap-south-1.compute.internal.8000 > 02dede94c403.47666: Flags [R.], seq 0, ack 4164453550, win 0, length 0
+15:41:48.715788 IP 02dede94c403.80 > ip-172-17-0-1.ap-south-1.compute.internal.56524: Flags [P.], seq 1:315, ack 75, win 509, options [nop,nop,TS val 49808247 ecr 3225780893], length 314: HTTP: HTTP/1.1 502 Bad Gateway
+15:41:48.716276 IP ip-172-17-0-1.ap-south-1.compute.internal.56524 > 02dede94c403.80: Flags [.], ack 315, win 500, options [nop,nop,TS val 3225780894 ecr 49808247], length 0
+15:41:48.717097 IP ip-172-17-0-1.ap-south-1.compute.internal.56524 > 02dede94c403.80: Flags [F.], seq 75, ack 315, win 501, options [nop,nop,TS val 3225780895 ecr 49808247], length 0
+15:41:48.717132 IP 02dede94c403.80 > ip-172-17-0-1.ap-south-1.compute.internal.56524: Flags [F.], seq 315, ack 76, win 509, options [nop,nop,TS val 49808248 ecr 3225780895], length 0
+15:41:48.717146 IP ip-172-17-0-1.ap-south-1.compute.internal.56524 > 02dede94c403.80: Flags [.], ack 316, win 501, options [nop,nop,TS val 3225780895 ecr 49808248], length 0
+
+
+
+apt update
+apt install net-tools
+ifconfig
+apt install tcpdump
+tcpdump -i eth0
+
+
+
+
